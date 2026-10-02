@@ -1,0 +1,34 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "wordpress/wp-content/mu-plugins/flat101-base"
+    },
+    {
+      "path": "wordpress/wp-content/plugins/custom-cpt"
+    }
+  ],
+  "settings": {
+    "editor.rulers": [120],
+    "phpsab.snifferMode": "onType",
+    "phpsab.snifferShowSources": true,
+    "[php]": {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "valeryanm.vscode-phpsab"
+    },
+    "[json]": {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[markdown]": {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+  }
+}

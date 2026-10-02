@@ -1,0 +1,63 @@
+# Translations
+*.mo
+*.po~
+
+# Dependencies
+node_modules/
+
+# IDEs
+.vscode/
+.idea/
+
+# Packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# OS files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+*.bak
+
+# Excludes all
+/*
+
+# except these directories...
+!/docker
+!/docker/**/*
+!/sh
+!/sh/**/*
+!/install
+/sh/wp/.wp.local.env
+
+# and these files
+!/composer.json
+!/composer.lock
+!/phpstan.neon.dist
+!/README.md
+!/wp.code-workspace
+!/.editorconfig
+!/.gitattributes
+!/.gitignore
+!/.phpcs.xml.dist
+!/.prettierrc.json
+
+# Excludes all except these plugins/themes...
+!/wordpress
+/wordpress/*
+!/wordpress/wp-content
+/wordpress/wp-content/*
+!/wordpress/wp-content/plugins
+/wordpress/wp-content/plugins/*
+!/wordpress/wp-content/plugins/custom-cpt

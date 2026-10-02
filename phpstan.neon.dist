@@ -1,0 +1,8 @@
+parameters:
+  level: 8
+  paths:
+    - wordpress/wp-content/plugins/custom-cpt/custom-cpt.php
+    - wordpress/wp-content/plugins/custom-cpt/includes/
+  scanDirectories:
+    - wordpress/wp-content/mu-plugins/flat101-base/
+    - wordpress/wp-content/plugins/advanced-custom-fields-pro/

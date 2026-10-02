@@ -1,0 +1,97 @@
+{
+  "scripts": {
+    "wp:prepare": "bash sh/wp/wp-prepare.launch.sh",
+    "pre-install-cmd": "@wp:prepare",
+    "pre-update-cmd": "@wp:prepare",
+    "post-install-cmd": [
+      "@custom-cpt:mo"
+    ],
+    "post-update-cmd": [
+      "@custom-cpt:mo"
+    ],
+    "cs": "vendor/bin/phpcs --standard=.phpcs.xml.dist",
+    "cs-fix": "vendor/bin/phpcbf --standard=.phpcs.xml.dist",
+    "lint": [
+      "vendor/bin/parallel-lint --blame wordpress/wp-content/plugins/custom-cpt"
+    ],
+    "phpstan": "vendor/bin/phpstan analyse",
+    "custom-cpt:pot": "wp i18n make-pot wordpress/wp-content/plugins/custom-cpt wordpress/wp-content/plugins/custom-cpt/languages/custom-cpt.pot",
+    "custom-cpt:po": "wp i18n update-po wordpress/wp-content/plugins/custom-cpt/languages/custom-cpt.pot",
+    "custom-cpt:mo": "wp i18n make-mo wordpress/wp-content/plugins/custom-cpt/languages/",
+    "check-vulnerabilities": "@composer update --dry-run roave/security-advisories",
+    "qa": [
+      "@lint",
+      "@cs",
+      "@phpstan"
+    ]
+  },
+  "require": {
+    "php": ">=8.3",
+    "flat101/flat101-wp-base-mu-plugin": "^1.0",
+    "wpengine/advanced-custom-fields-pro": "6.7.0",
+    "wpackagist-plugin/all-in-one-wp-security-and-firewall": "5.4.4",
+    "wpackagist-plugin/ewww-image-optimizer": "8.3.0",
+    "wpackagist-theme/blockbase": "3.1.21",
+    "wpackagist-theme/twentytwentyfour": "1.3",
+    "wp-cli/i18n-command": "^2.6"
+  },
+  "require-dev": {
+    "wpackagist-plugin/loco-translate": "^2.6",
+    "wpackagist-plugin/automatic-translator-addon-for-loco-translate": "^2.4",
+    "wpackagist-plugin/wp-crontrol": "1.19.3",
+    "roave/security-advisories": "dev-latest",
+    "flat101/php-coding-standards": "dev-main",
+    "szepeviktor/phpstan-wordpress": "^1.3",
+    "phpstan/extension-installer": "^1.3"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org",
+      "only": [
+        "wpackagist-plugin/*",
+        "wpackagist-theme/*"
+      ]
+    },
+    {
+      "type": "vcs",
+      "url": "https://bitbucket.org/flat101team/flat101-php-coding-standards.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://bitbucket.org/flat101team/flat101-wp-base-mu-plugin.git"
+    },
+    {
+      "type": "composer",
+      "url": "https://connect.advancedcustomfields.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Custom\\Cpt\\": "wordpress/wp-content/plugins/custom-cpt/includes/"
+    }
+  },
+  "extra": {
+    "installer-paths": {
+      "wordpress/wp-content/mu-plugins/{$name}/": [
+        "type:wordpress-muplugin"
+      ],
+      "wordpress/wp-content/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ],
+      "wordpress/wp-content/themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
+    }
+  },
+  "config": {
+    "platform": {
+      "php": "8.3"
+    },
+    "allow-plugins": {
+      "composer/installers": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "phpstan/extension-installer": true
+    }
+  }
+}

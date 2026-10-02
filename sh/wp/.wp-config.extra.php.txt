@@ -1,0 +1,37 @@
+define( 'WP_DEBUG', true );
+define( 'WP_DEBUG_LOG', true ); // Salida a /wp-content/debug.log
+define( 'WP_DEBUG_DISPLAY', false );
+define( 'SAVEQUERIES', false ); // Consultas SQL (string, tiempo y función que la llamó). Lo va guardando en $wpdb->queries
+
+// Public Zone (Dft: 40 MB)
+define( 'WP_MEMORY_LIMIT', '128M' );
+
+// Admin Zone (Dft: 64 MB)
+define( 'WP_MAX_MEMORY_LIMIT', '256M' );
+
+// Quit automatic updates (core, plugin, theme and translation)
+define( 'AUTOMATIC_UPDATER_DISABLED', true );
+
+// No edit theme and plugin files directly from within the WordPress
+define( 'DISALLOW_FILE_EDIT', true );
+
+// Force WP to write the files (plugins, themes,...) without S/FTP
+define( 'FS_METHOD', 'direct' );
+
+// Force SSL
+define( 'FORCE_SSL_LOGIN', true );
+define( 'FORCE_SSL_ADMIN', true );
+
+// Don't use load-styles.php or load-scripts.php
+define( 'CONCATENATE_SCRIPTS', false );
+
+// Maximum number of revisions
+define( 'WP_POST_REVISIONS', 5 );
+
+// Disable the default WP Cron
+define( 'DISABLE_WP_CRON', true );
+
+// Load Composer autoloader
+if ( file_exists( __DIR__ . '/../vendor/autoload.php' ) ) {
+	require_once __DIR__ . '/../vendor/autoload.php';
+}
