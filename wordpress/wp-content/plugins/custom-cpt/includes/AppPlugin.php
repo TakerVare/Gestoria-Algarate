@@ -5,8 +5,8 @@
 
 namespace Custom\Cpt;
 
-use Custom\Cpt\Cpt\DogCpt;
-use Custom\Cpt\Taxonomy\BreedTaxonomy;
+use Custom\Cpt\Cpt\DocumentoCpt;
+use Custom\Cpt\Taxonomy\EmpresaTaxonomy;
 use Flat101\Base\Model\Plugin\CptPlugin;
 
 class AppPlugin extends CptPlugin {
@@ -20,8 +20,8 @@ class AppPlugin extends CptPlugin {
 	protected function on_construct_end(): void {
 
 		// Init properties
-		$this->cpts       = array( new DogCpt() );
-		$this->taxonomies = array( new BreedTaxonomy() );
+		$this->cpts       = array( new DocumentoCpt() );
+		$this->taxonomies = array( new EmpresaTaxonomy() );
 
 		// Define constants.
 		define( 'CUSTOM_CPT__PATH', $this->path );

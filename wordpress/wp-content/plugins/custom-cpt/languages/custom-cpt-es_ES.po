@@ -76,3 +76,22 @@ msgstr "¿Es un dibujo animado?"
 #: includes/Cpt/DogCpt.php:116
 msgid "Year"
 msgstr "Año"
+
+msgctxt "Post type singular name"
+msgid "Document"
+msgstr "Documento"
+
+msgctxt "Post type plural name"
+msgid "Documents"
+msgstr "Documentos"
+
+msgctxt "Taxonomy singular name"
+msgid "Company"
+msgstr "Empresa"
+
+msgctxt "Taxonomy plural name"
+msgid "Companies"
+msgstr "Empresas"
+
+msgid "Company"
+msgstr "Empresa"
