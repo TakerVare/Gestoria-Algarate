@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<ruleset>
+
+  <!-- Put the paths to your plugins and themes -->
+  <file>wordpress/wp-content/plugins/custom-cpt/</file>
+  <!-- <file>wordpress/wp-content/themes/flat101/</file> -->
+
+  <arg name="basepath" value="."/>
+
+  <!-- Check for cross-version support for PHP 8.3 and higher -->
+  <config name="testVersion" value="8.3-"/>
+
+  <!-- Check compatibility based on WordPress version -->
+  <config name="minimum_supported_wp_version" value="6.5.2"/>
+
+  <rule ref="Flat101-WP"/>
+
+  <rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+    <properties>
+      <property name="prefixes" type="array">
+        <element value="custom_"/>
+        <element value="CUSTOM_"/>
+        <element value="Custom\"/>
+      </property>
+    </properties>
+
+    <include-pattern>*/mu-plugins/*</include-pattern>
+    <include-pattern>*/plugins/*</include-pattern>
+    <include-pattern>*/themes/*</include-pattern>
+  </rule>
+
+  <rule ref="WordPress.WP.I18n">
+    <properties>
+      <property name="text_domain" type="array">
+        <element value="custom-cpt"/>
+      </property>
+    </properties>
+  </rule>
+
+</ruleset>

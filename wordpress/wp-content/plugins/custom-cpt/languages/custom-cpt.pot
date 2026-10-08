@@ -1,0 +1,75 @@
+# Copyright (C) 2024 Flat 101
+# This file is distributed under the same license as the Custom - Custom Post Types plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Custom - Custom Post Types\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/custom-cpt\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-03-07T21:51:12+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.10.0\n"
+"X-Domain: custom-cpt\n"
+
+#. Plugin Name of the plugin
+#: custom-cpt.php
+msgid "Custom - Custom Post Types"
+msgstr ""
+
+#. Description of the plugin
+#: custom-cpt.php
+msgid "Create custom post types and taxonomies to this site."
+msgstr ""
+
+#. Author of the plugin
+#: custom-cpt.php
+msgid "Flat 101"
+msgstr ""
+
+#. Author URI of the plugin
+#: custom-cpt.php
+msgid "https://www.flat101.es"
+msgstr ""
+
+#: custom-cpt.php:31
+msgid "This plugin can not be activated because it requires \"Flat 101 Base\" mu-plugin."
+msgstr ""
+
+#: custom-cpt.php:34
+msgid "Go back"
+msgstr ""
+
+#: includes/Cpt/DogCpt.php:31
+msgctxt "Post type singular name"
+msgid "Dog"
+msgstr ""
+
+#: includes/Cpt/DogCpt.php:32
+msgctxt "Post type plural name"
+msgid "Dogs"
+msgstr ""
+
+#: includes/Cpt/DogCpt.php:92
+msgid "Dog Group"
+msgstr ""
+
+#: includes/Cpt/DogCpt.php:96
+msgid "Is it a cartoon?"
+msgstr ""
+
+#: includes/Cpt/DogCpt.php:116
+msgid "Year"
+msgstr ""
+
+#: includes/Taxonomy/BreedTaxonomy.php:34
+msgctxt "Taxonomy singular name"
+msgid "Breed"
+msgstr ""
+
+#: includes/Taxonomy/BreedTaxonomy.php:35
+msgctxt "Taxonomy plural name"
+msgid "Breeds"
+msgstr ""

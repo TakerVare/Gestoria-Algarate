@@ -1,0 +1,78 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Custom - Custom Post Types\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/custom-cpt\n"
+"Last-Translator: \n"
+"Language-Team: Español\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-03-07T06:34:19+00:00\n"
+"PO-Revision-Date: 2024-03-07 21:52+0000\n"
+"Language: es_ES\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Domain: custom-cpt\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Loco-Version: 2.6.6; wp-6.4.3"
+
+#. Plugin Name of the plugin
+#: custom-cpt.php
+msgid "Custom - Custom Post Types"
+msgstr "Custom - Custom post types"
+
+#. Description of the plugin
+#: custom-cpt.php
+msgid "Create custom post types and taxonomies to this site."
+msgstr "Crear tipos de contenido y taxonomías personalizadas para este sitio."
+
+#. Author of the plugin
+#: custom-cpt.php
+msgid "Flat 101"
+msgstr "Flat 101"
+
+#. Author URI of the plugin
+#: custom-cpt.php
+msgid "https://www.flat101.es"
+msgstr "https://www.flat101.es"
+
+#: custom-cpt.php:31
+msgid ""
+"This plugin can not be activated because it requires \"Flat 101 Base\" mu-"
+"plugin."
+msgstr "Este plugin no puede activarse porque requiere \"Flat 101 - Base\"."
+
+#: custom-cpt.php:34
+msgid "Go back"
+msgstr "Volver"
+
+#: includes/Cpt/DogCpt.php:31
+msgctxt "Post type singular name"
+msgid "Dog"
+msgstr "Perro"
+
+#: includes/Cpt/DogCpt.php:32
+msgctxt "Post type plural name"
+msgid "Dogs"
+msgstr "Perros"
+
+#: includes/Taxonomy/BreedTaxonomy.php:34
+msgctxt "Taxonomy singular name"
+msgid "Breed"
+msgstr "Raza"
+
+#: includes/Taxonomy/BreedTaxonomy.php:35
+msgctxt "Taxonomy plural name"
+msgid "Breeds"
+msgstr "Razas"
+
+#: includes/Cpt/DogCpt.php:92
+msgid "Dog Group"
+msgstr "Grupo para Perros"
+
+#: includes/Cpt/DogCpt.php:96
+msgid "Is it a cartoon?"
+msgstr "¿Es un dibujo animado?"
+
+#: includes/Cpt/DogCpt.php:116
+msgid "Year"
+msgstr "Año"

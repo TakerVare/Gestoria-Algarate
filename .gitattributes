@@ -1,0 +1,7 @@
+* text=auto
+*.md text diff=markdown
+*.php diff=php
+*.phar binary
+*.sh text eol=lf
+*.env text eol=lf
+crontab text eol=lf
